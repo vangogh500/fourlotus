@@ -1,0 +1,45 @@
+#banner {
+}
+
+.parallax-container {
+  position: static;
+  height: 500px;
+  width: 100%;
+}
+
+.parallax {
+    margin-top: 100px;
+}
+
+.bannerLogo {
+  margin-top: 250px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bannerLogo2 {
+  color: #FFF;
+  line-height: 0.5;
+  margin:0 auto;
+  width:auto;
+  display:table;
+  font-weight: bold;
+}
+
+.logoContainer {
+  height: 50px;
+  margin-top: 240px;
+}
+
+.shop {
+  margin-top: 50px;
+}
+
+.shop-form {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.floatRight {
+  float: right;
+}
