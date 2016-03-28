@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { IndexRoute, Router, Route, browserHistory } from 'react-router'
 import MainNavBar from './components/mainnavbar'
 import Home from './components/home'
+import MainFooter from './components/mainfooter'
 import Shop from './components/shop'
 
 class App extends React.Component {
@@ -10,18 +10,35 @@ class App extends React.Component {
     return (
       <div>
         <MainNavBar />
-        {this.props.children}
+        <Home />
+        <MainFooter />
+      </div>
+    )
+  }
+}
+class AppShop extends React.Component {
+  render() {
+    return (
+      <div>
+        <MainNavBar />
+        <Shop />
+        <MainFooter />
       </div>
     )
   }
 }
 
-ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="shop" component={Shop} />
-    </Route>
-  </Router>,
-  document.getElementById('app')
-);
+var app = document.getElementById('app');
+
+if(!(app === null)) {
+  ReactDOM.render(
+    <App />,
+    app
+  );
+}
+else {
+  ReactDOM.render(
+    <AppShop />,
+    document.getElementById('shop')
+  );
+}

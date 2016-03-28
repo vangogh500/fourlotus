@@ -1,4 +1,5 @@
 import React from 'react';
+import Gallery from './gallery'
 
 export default class MainNavBar extends React.Component {
   render() {
@@ -11,8 +12,7 @@ export default class MainNavBar extends React.Component {
             <p>Just do you</p>
           </blockquote>
         </div>
-        <div className="logoContainer">
-        </div>
+        <Gallery />
       </div>
     )
   }
