@@ -1,9 +1,9 @@
-#banner {
+.greyOpaque {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .parallax-container {
   position: static;
-  height: 500px;
   width: 100%;
 }
 
