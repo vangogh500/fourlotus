@@ -1,5 +1,6 @@
-.greyOpaque {
-  background: rgba(0, 0, 0, 0.3);
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .parallax-container {
